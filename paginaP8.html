@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reporte de Emergencias</title>
+    <style>
+        /* CSS ultra básico (menos de 15 líneas) */
+        body { font-family: sans-serif; max-width: 500px; margin: 20px auto; padding: 0 10px; line-height: 1.5; }
+        header, nav, footer { text-align: center; }
+        nav a { margin: 0 10px; text-decoration: none; font-weight: bold; color: #2c3e50; }
+        label, input, select, textarea, button { display: block; width: 100%; margin-top: 5px; margin-bottom: 15px; box-sizing: border-box; }
+        input, select, textarea { padding: 8px; }
+        button { background: #c0392b; color: white; border: none; padding: 10px; font-weight: bold; cursor: pointer; }
+    </style>
+</head>
+<body>
+
+    <!-- 1. ENCABEZADO -->
+    <header>
+        <h1>Centro de Emergencias 911</h1>
+    </header>
+
+    <!-- 2. BARRA DE NAVEGACIÓN -->
+    <nav>
+        <a href="#reporte">Reportar</a> |
+        <a href="#telefonos">Numeros de emergengia</a>
+    </nav>
+
+    <hr>
+
+    <!-- 3. CUERPO PRINCIPAL -->
+    <main>
+        <!-- Formulario -->
+        <section id="reporte">
+            <h2>Reportar Incidente</h2>
+            <form action="#" method="post">
+                
+                <label for="tipo">Tipo de emergencia:</label>
+                <select id="tipo" required>
+                    <option value="">Seleccione...</option>
+                    <option value="medica">Médica</option>
+                    <option value="incendio">Incendio</option>
+                    <option value="policia">Seguridad / Policía</option>
+                </select>
+
+                <label for="ubicacion">Ubicación exacta:</label>
+                <input type="text" id="ubicacion" required>
+
+                <label for="descripcion">¿Qué sucedió?:</label>
+                <textarea id="descripcion" rows="3" required></textarea>
+
+                <label for="telefono">Teléfono de contacto:</label>
+                <input type="tel" id="telefono" required>
+
+                <button type="submit">ENVIAR ALERTA</button>
+            </form>
+        </section>
+
+        <hr>
+
+        <!-- Información de contacto -->
+        <section id="telefonos">
+            <h3>Líneas Directas</h3>
+            <ul>
+                <li><strong>Emergencias:</strong> 911</li>
+                <li><strong>Cruz Roja:</strong> 065</li>
+                <li><strong>Bomberos:</strong> 068</li>
+            </ul>
+        </section>
+    </main>
+
+    <hr>
+
+    <!-- 4. FOOTER -->
+    <footer>
+        <p>DUARTE GRANADOS SAID 0833 5-J</p>
+    </footer>
+
+</body>
+</html>
